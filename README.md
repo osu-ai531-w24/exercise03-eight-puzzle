@@ -73,9 +73,9 @@ After solving a few moderately challenging states, see how well your solver work
 on the following states, which produce longer solutions.
 
 ```
-2 8 3
-1 6 4
-7 . 5
+7 2 4
+5 . 6
+8 3 1
 
 8 . 6
 5 4 7
