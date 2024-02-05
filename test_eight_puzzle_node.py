@@ -29,29 +29,29 @@ class TestEightPuzzleNode(unittest.TestCase):
         """
         An EightPuzzleNode has a `state` property.
         """
-        problem = EightPuzzleNode("Fake State", None, None, None)
-        self.assertEqual("Fake State", problem.state)
+        node = EightPuzzleNode("Fake State", None, None, None)
+        self.assertEqual("Fake State", node.state)
 
     def test_parent(self):
         """
         An EightPuzzleNode has a `parent` property.
         """
-        problem = EightPuzzleNode(None, "Fake Parent Node", None, None)
-        self.assertEqual("Fake Parent Node", problem.parent)
+        node = EightPuzzleNode(None, "Fake Parent Node", None, None)
+        self.assertEqual("Fake Parent Node", node.parent)
 
     def test_action(self):
         """
         An EightPuzzleNode has a `action` property.
         """
-        problem = EightPuzzleNode(None, None, "Fake Action", None)
-        self.assertEqual("Fake Action", problem.action)
+        node = EightPuzzleNode(None, None, "Fake Action", None)
+        self.assertEqual("Fake Action", node.action)
 
     def test_path_cost(self):
         """
         An EightPuzzleNode has a `path_cost` property.
         """
-        problem = EightPuzzleNode(None, None, None, "Fake Path Cost")
-        self.assertEqual("Fake Path Cost", problem.path_cost)
+        node = EightPuzzleNode(None, None, None, "Fake Path Cost")
+        self.assertEqual("Fake Path Cost", node.path_cost)
 
 def fake_value():
     return f"FAKE {time.time()}"
