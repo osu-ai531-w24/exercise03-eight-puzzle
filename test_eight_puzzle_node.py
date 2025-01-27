@@ -53,6 +53,29 @@ class TestEightPuzzleNode(unittest.TestCase):
         node = EightPuzzleNode(None, None, None, "Fake Path Cost")
         self.assertEqual("Fake Path Cost", node.path_cost)
 
+    """
+    Behaviors
+    """
+
+    def test_less_than_more_expensive(self):
+        """
+        An EightPuzzleNode with a path_cost less than another is considered to
+        be "less than" another EightPuzzleNode.
+        """
+        less_expensive_node = EightPuzzleNode(None, None, None, 1)
+        more_expensive_node = EightPuzzleNode(None, None, None, 2)
+        self.assertTrue(less_expensive_node < more_expensive_node)
+
+    def test_less_than_less_espensive(self):
+        """
+        An EightPuzzleNode with a path_cost more than another is considered to
+        not be "less than" another EightPuzzleNode.
+        """
+        less_expensive_node = EightPuzzleNode(None, None, None, 1)
+        more_expensive_node = EightPuzzleNode(None, None, None, 2)
+        self.assertFalse(more_expensive_node < less_expensive_node)
+
+
 def fake_value():
     return f"FAKE {time.time()}"
 
