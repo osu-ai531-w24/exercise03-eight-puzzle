@@ -66,7 +66,7 @@ class TestEightPuzzleBestFirstSearchSolver(unittest.TestCase):
 
     # def test_1_2_None_3_4_5_6_7_8(self):
     #     """
-    #     The solution for (1, None, 2, 3, 4, 5, 6, 7, 8) is [move_left, move_left].
+    #     The solution for (1, 2, None, 3, 4, 5, 6, 7, 8) is [move_left, move_left].
     #     """
     #     initial_state = (1, 2, None, 3, 4, 5, 6, 7, 8)
     #     goal_state = (None, 1, 2, 3, 4, 5, 6, 7, 8)
@@ -78,7 +78,7 @@ class TestEightPuzzleBestFirstSearchSolver(unittest.TestCase):
 
     # def test_3_1_2_6_4_5_None_7_8(self):
     #     """
-    #     The solution for (1, None, 2, 3, 4, 5, 6, 7, 8) is [move_up, move_up].
+    #     The solution for (3, 1, 2, 6, 4, 5, None, 7, 8) is [move_up, move_up].
     #     """
     #     initial_state = (3, 1, 2, 6, 4, 5, None, 7, 8)
     #     goal_state = (None, 1, 2, 3, 4, 5, 6, 7, 8)
