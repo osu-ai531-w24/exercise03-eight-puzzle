@@ -3,6 +3,8 @@
 # a best-first search algorithm and an evaluation function. It encapsulates the
 # application of the algorithm to the problem, and in the end can produce a
 # solution, which is a list of actions.
+# YOUR NAME
+
 
 from queue import PriorityQueue
 from eight_puzzle_node import EightPuzzleNode
